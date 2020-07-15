@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.naver.naverspeech.client.Make_Group_Check
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/make_group_iconItem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/account48"
+            android:background="@drawable/imageview_shape"/>
+
+
+        <LinearLayout
+
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:background="@drawable/list_info_shape"
+            >
+
+            <TextView
+
+                android:id="@+id/make_group_u_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:elegantTextHeight="false"
+                android:text="이름"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#111111"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/make_group_u_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="회사"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#959595"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/make_group_u_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="부서"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#959595"
+                    android:textSize="12dp" />
+                <TextView
+                android:id="@+id/make_group_u_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="직책"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#959595"
+                android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_info_shape"
+            >
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/make_group_check"
+                android:focusable="false"
+                android:clickable="false"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</com.naver.naverspeech.client.Make_Group_Check>

@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="Splash" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+    </style>
+
+    <style name="SongTheme" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="android:statusBarColor">@color/colorPrimaryDark_1</item>
+        <item name="android:colorAccent">@color/accent_material_light</item>
+    </style>
+    <style name="myHintStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">#797979</item>
+    </style>
+    <style name="f" parent="Base.Widget.MaterialComponents.TextInputEditText">
+    <item name="android:label">"subject"</item>
+    </style>
+
+
+    <style name="SongNoActionBar" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:statusBarColor">@color/statuscolor</item>
+        <item name="colorAccent">?android:attr/colorPrimary</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.OverFlow</item>
+
+    </style>
+    <style name="AppTheme.OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+    <item name="android:tint">#ffffff</item>
+    </style>
+
+
+    <style name="SongActionBar" parent="Base.Theme.AppCompat.Light" >
+        <item name="android:statusBarColor">@color/statuscolor</item>
+        <item name="android:textColorPrimary">#000000</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:colorControlNormal">#949494</item>
+        <item name="android:colorControlActivated">#605f5f</item>
+
+    </style>
+
+    <style name="SongCheckTheme" parent="SongNoActionBar">
+        <item name="colorAccent">#7DE2FC</item>
+    </style>
+
+    <style name="SongDialog" parent="Theme.MaterialComponents.Light.Dialog" >
+        <item name="colorPrimary">@color/SongColor1</item>
+        <item name="colorPrimaryDark">@color/SongColor2</item>
+    </style>
+<style name="SongTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="boxStrokeColor">#7de2fc</item>
+    <item name="boxStrokeWidth">2dp</item>
+</style>
+</resources>

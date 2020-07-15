@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add_friend"
+        android:icon="@drawable/add_friend_white"
+        android:title="add_friend"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_add_group"
+        android:icon="@drawable/add_group_white"
+        android:title="add_group"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_edit_friend"
+        android:icon="@drawable/delete_friend"
+        app:showAsAction="never"
+        android:title="편집"
+        />
+
+</menu>

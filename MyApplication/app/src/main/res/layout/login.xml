@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/only_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="MeetKey"
+        android:textColor="#43d2e8"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+         />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:layout_below="@+id/textView"
+        android:paddingTop="40dp"
+        >
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        app:boxStrokeColor="#43d2e8"
+        app:hintTextAppearance="@style/myHintStyle"
+        style="@style/SongTextInput"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userid"
+            style="@style/SongTextInput"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:hint="username"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:outlineAmbientShadowColor="#ffffff"
+            android:textSize="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="signup"
+            android:textColor="#595959"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/signup"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="forget password?"
+            android:textColor="#595959"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/forget_password"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            />
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/button_shape"
+            android:text="Login"
+            android:textColor="#ffffff"
+
+            />
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_above="@+id/login"
+    android:layout_marginBottom="-109dp"
+    app:boxStrokeColor="#43d2e8"
+    style="@style/SongTextInput"
+    app:hintTextAppearance="@style/myHintStyle"
+
+    >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userpw"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_above="@+id/login"
+            android:layout_gravity="center"
+            android:hint="password"
+            android:textSize="15dp"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#757575" />
+</com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

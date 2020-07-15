@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Conference"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/gradient_main"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:elevation="4dp"
+            android:background="#00ffffff"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back35"
+                android:background="#00ffffff"
+                android:id="@+id/c_gohome"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MeetKey"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:layout_marginStart="130dp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/layout_shape"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회의 중"
+                android:layout_marginStart="20dp"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/layout_shape3"
+            >
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="430dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_shape2"
+        android:layout_gravity="center_horizontal"
+        >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="인공지능 회의 분석 서비스"
+           android:textSize="18dp"
+           android:textColor="#111111"
+           android:id="@+id/conference_save_subject"
+           android:layout_marginStart="15dp"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-09-05"
+            android:textSize="18dp"
+            android:textColor="#959595"
+            android:id="@+id/conference_save_date"
+            android:layout_marginStart="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOZ"
+            android:textSize="18dp"
+            android:textColor="#959595"
+            android:id="@+id/conference_save_room"
+            android:layout_marginStart="15dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#959595"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/hangout"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_result"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#959595"
+            />
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:layout_marginTop="20dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/gradient_progress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_time"
+            android:textColor="#73879c"
+            android:layout_gravity="center_horizontal"
+            android:text="00:00"
+            android:textSize="25dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_record"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/record35"
+                android:onClick="onClick" />
+
+
+
+            <ImageButton
+                android:id="@+id/btn_pause"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/pause35"
+                android:onClick="onClick" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_shape"
+        android:onClick="onClick"
+        android:text="회의종료" />
+</LinearLayout>

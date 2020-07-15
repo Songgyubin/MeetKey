@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018.09.08"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:id="@+id/view_add_Date"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3/4분기 예산결의회"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:id="@+id/view_add_Mname"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="송규빈"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/view_add_Made"
+                android:textColor="#000000"
+                />
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/view_add_Image"
+                android:layout_gravity="center_horizontal"
+                />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_add_focus_subject"
+                >
+            </ListView>
+
+        </LinearLayout>
+
+</LinearLayout>

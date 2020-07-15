@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_subject"
+            android:hint="주제"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/history_date"
+        android:hint="날짜"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/history_people"
+        android:hint="인원"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/conference_room"
+        android:hint="회의실"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_centerInParent="true"
+        android:background="#1fc78a" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회의 요약본"
+            android:id="@+id/view_summary"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="녹음 재생"
+            android:id="@+id/play_voice"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회의록 삭제"
+            android:id="@+id/delete"/>
+
+
+
+
+</LinearLayout>

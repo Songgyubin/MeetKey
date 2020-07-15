@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/reservation_con_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="송규빈"
+            android:textColor="#111111"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/reservation_con_where"
+            android:layout_marginRight="10dp"
+            android:text="TOZ"
+            android:textColor="#959595"
+            android:textSize="15dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reservation_con_mname"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="인공지능 기반 회의"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="#111111"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reservation_con_time"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="21:30"
+            android:textColor="#959595"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resvation_con_date"
+            android:layout_alignParentRight="true"
+            android:paddingRight="60dp"
+            android:textColor="#959595"
+            android:textSize="15dp"
+            android:text="11-15"
+
+            />
+
+    </RelativeLayout>
+</LinearLayout>

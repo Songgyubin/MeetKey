@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/gradient_main"
+    >
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#2a3f54"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/toggle_button_friend_shape"
+        android:text="계정"
+        android:id="@+id/show_friends"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="@drawable/toggle_button_group_shape"
+        android:text="그룹"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/show_group"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/layout_shape_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/friends_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:dividerHeight="10dp"
+                    android:divider="#f0f0f0"
+                    android:visibility="visible"
+                    >
+                </ListView>
+                <ExpandableListView
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:id="@+id/group_list"
+                    android:dividerHeight="10dp"
+                    android:divider="#f0f0f0"
+                    android:visibility="gone"
+                    >
+                </ExpandableListView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

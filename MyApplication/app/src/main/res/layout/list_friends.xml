@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_shape2"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/iconItem"
+            android:src="@drawable/account48"
+            android:background="@drawable/imageview_shape"
+         />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/list_info_shape"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/u_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:elegantTextHeight="false"
+                android:gravity="left"
+                android:text="이름"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#111111"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/u_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="회사"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#959595"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="부서"
+                    android:id="@+id/u_department"
+                    android:gravity="left"
+                    android:textColor="#959595"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="직책"
+                    android:id="@+id/u_position"
+                    android:gravity="left"
+                    android:textColor="#959595"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

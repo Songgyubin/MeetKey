@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.naver.naverspeech.client">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <application
+        android:name=".Cookie"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="MeetKey"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <provider
+            android:authorities="com.naver.naverspeech.client"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            >
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path"/>
+        </provider>
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login"
+            android:theme="@style/SongNoActionBar"
+            />
+        <activity android:name=".MainActivity"
+            android:theme="@style/SongNoActionBar"
+            />
+        <activity android:name=".Conference"
+            android:theme="@style/SongNoActionBar"
+            >
+        </activity>
+
+        <activity android:name=".Join_Meeting"
+            android:theme="@style/SongNoActionBar"
+            />
+        <activity android:name=".Save_Conference"
+            android:theme="@style/SongNoActionBar"
+            />
+        <activity android:name=".Camera_popup_conference"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            />
+        <activity android:name=".Camera_popup_signup"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            />
+        <activity android:name=".Joinadd_Search"
+            android:theme="@style/SongNoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+        <activity android:name=".Detail_history"/>
+        <activity android:name=".Sign_Up"
+            android:theme="@style/SongNoActionBar"
+            />
+        <activity android:name=".Make_Groups"
+            android:theme="@style/SongCheckTheme"
+            />
+        <activity android:name=".Join_Edit"
+            android:theme="@style/SongCheckTheme"/>
+        <activity android:name=".Invite_User"
+            android:theme="@style/SongCheckTheme"
+            />
+        <activity android:name=".History_Add_See"
+            android:theme="@style/SongNoActionBar"/>
+        <activity android:name=".Conference_pre"
+            android:theme="@style/SongNoActionBar"/>
+
+    </application>
+</manifest>
