@@ -9,9 +9,7 @@
 
 ## 이런 기술들을 썼어요!
 * Naver CSR
-* Mongo DB
-* Glide
-* Picasso
+* MVC
 * Volley
 
 ## 이런 화면들이 있습니다!
