@@ -11,6 +11,9 @@
 * Naver CSR
 * MVC
 * Volley
+* AWS
+* Mp4Parser
+* MPAndroidChart
 
 ## 이런 화면들이 있습니다!
 * 회의록 타임라인
